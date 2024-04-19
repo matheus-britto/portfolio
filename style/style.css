@@ -20,3 +20,8 @@ label {
     color: blue;
 }
 
+body {
+    background: radial-gradient(73.44% 73.44% at 50% 9.57%, #400876 0%, rgb(26, 20, 35) 100%);
+    background-attachment: fixed;
+    color: white;
+}
