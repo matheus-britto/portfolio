@@ -107,18 +107,21 @@ header {
     flex-direction: column;
     gap: 16px;
     padding: 64px;
+    margin-bottom: 64px;
+}
+
+.section-card {
     border-radius: 16px;
     border: 1px solid #3A3B41;
     background-color: color-mix(in srgb, #262629, transparent 50%);
     backdrop-filter: blur(2px);
-    margin-bottom: 64px;
 }
 
-.about h2 {
+/* .about h2 {
     font-family: var(--nunito);
     font-size: 3.2rem;
     font-weight: 700;
-}
+} */
 
 .about p {
     font-family: var(--ibm-plex);
@@ -134,10 +137,10 @@ header {
     margin-bottom: 88px;
 }
 
-.highlights h2 {
+/* .highlights h2 {
     font-size: 3.2rem;
     font-weight: 700;
-}
+} */
 
 .skills, .hobbies{
     display: flex;
@@ -159,4 +162,120 @@ header {
     padding: 16px;
     border-radius: 12px;
     font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.box-content img{
+    height: 2.8rem;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 82px;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.h2-title {
+    font-family: var(--nunito);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.card-wrap {
+    display: flex;
+    gap: 16px;
+}
+
+.formacao-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.h3-title {
+    font-family: var(--nunito);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.formacao-card p {
+    font-family: var(--ibm-plex);
+    font-weight: 500;
+}
+
+.white-box {
+    width: 368px;
+    height: 286px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.thumb-placeholder {
+    min-width: 752px;
+    min-height: 408px;
+    border-radius: 16px;
+    background-color: violet;
+}
+
+.exp-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+}
+
+.exp-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exp-text-wrap p {
+    margin-bottom: 8px;
+}
+
+.btn-wrap {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #8927EF;
+    border: 1px solid #8927EF;
+}
+
+.btn-secondary {
+    background-color: #1E142F;
+    border: 1px solid #7D35D5;
+    color: #C698FF;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
