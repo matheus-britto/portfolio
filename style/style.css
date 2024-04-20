@@ -4,6 +4,11 @@
 :root {
     --nunito: "Nunito Sans", sans-serif;
     --ibm-plex: "IBM Plex Sans", sans-serif;
+    --text: #efeff1;
+    --background: #1a1424;
+    --primary: #782DCD;
+    --secondary: #3D3D6F;
+    --accent: #4D148A;
 }
 
 
@@ -32,7 +37,7 @@ label {
 body {
     background: radial-gradient(73.44% 73.44% at 50% 9.57%, #400876 0%, rgb(26, 20, 35) 100%);
     background-attachment: fixed;
-    color: white;
+    color: var(--text);
     font-family: var(--nunito);
     font-size: 1.6rem;
 }
