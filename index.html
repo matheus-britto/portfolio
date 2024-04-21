@@ -9,37 +9,40 @@
     <title>Matheus Brito - Portfólio </title>
 </head>
 <body>
-    <div class="site">
-        <header>
-            <a href="">Matheus Brito</a>
-            <nav class="menu">
-                <a href="#">Sobre mim</a>
-                <a href="#">Skills</a>
-                <a href="#">Hobbies</a>
-                <a href="#">Formação</a>
-                <a href="#">Projetos</a>
-                <a href="mailto:matheus9.7@hotmail.com">matheus9.7@hotmail.com</a>
-            </nav>
+    <div class="site content-grid">
+        <header class="header full-width">
+            <div class="menu-center">
+                <a class="main-link">Matheus Brito</a>
+                <nav class="menu">
+                    <a href="#">Sobre mim</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Hobbies</a>
+                    <a href="#">Formação</a>
+                    <a href="#">Projetos</a>
+                    <a href="mailto:matheus9.7@hotmail.com">matheus9.7@hotmail.com</a>
+                </nav>
+            </div>
         </header>
 
-        <section class="hero">
-            <div class="hero--texts">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat mi ut nisi convallis, id euismod arcu placerat. Etiam sed ornare mi. Sed congue vulputate erat, nec iaculis nibh efficitur in. Phasellus et mattis mi.</p>
-                <div class="hero--links">
-                    <a href="">Github</a>
-                    <a href="">Linkedin</a>
-                    <a href="">Instagram</a>
-                    <a href="">Currículo</a>
+        <main>
+            <section class="hero">
+                <div class="hero--texts">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat mi ut nisi convallis, id euismod arcu placerat. Etiam sed ornare mi. Sed congue vulputate erat, nec iaculis nibh efficitur in. Phasellus et mattis mi.</p>
+                    <div class="hero--links">
+                        <a href="">Github<i class="fa-solid fa-square-arrow-up-right";"></i></a>
+                        <a href="">Linkedin<i class="fa-solid fa-square-arrow-up-right";"></i></a>
+                        <a href="">Instagram<i class="fa-solid fa-square-arrow-up-right";"></i></a>
+                        <a href="">Currículo<i class="fa-solid fa-square-arrow-up-right";"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="img-placeholder"></div>
-        </section>
-
-        <section class="about section-card">
-            <h2 class="h2-title">Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore quaerat assumenda odit eum cum nihil laboriosam, quos voluptatibus dolores sunt accusantium iure doloribus quidem corrupti mollitia, asperiores, fuga optio.</p>
-        </section>
+                <div class="img-placeholder"></div>
+            </section>
+            <section class="about section-card">
+                <h2 class="h2-title">Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempore quaerat assumenda odit eum cum nihil laboriosam, quos voluptatibus dolores sunt accusantium iure doloribus quidem corrupti mollitia, asperiores, fuga optio.</p>
+            </section>
+        </main>
 
         <section class="highlights">
             <div class="skills">
@@ -90,46 +93,55 @@
 
         <section class="exp">
             <h2 class="h2-title">Experiência Profissional</h2>
-            <div class="exp-card">
-                <div class="thumb-placeholder"></div>
-                <div class="exp-text-wrap">
-                    <h3 class="h3-title">Decodificador de Texto</h3>
-                    <p>Challenge Alura Codificador</p>
-                    <div class="btn-wrap">
-                        <a class="btn btn-secondary" href="">Repositório</a>
-                        <a class="btn btn-primary" href="">Ver Demo</a>
+            <div class="card-wrapper">
+                <div class="exp-card card1">
+                    <div class="thumb-placeholder"></div>
+                    <div class="exp-text-wrap">
+                        <div class="center">
+                            <h3 class="h3-title">Decodificador de Texto</h3>
+                            <p>Challenge Alura Codificador</p>
+                            <div class="btn-wrap">
+                                <a class="btn btn-secondary" href="">Repositório</a>
+                                <a class="btn btn-primary" href="">Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="exp-card">
-                <div class="exp-text-wrap">
-                    <h3 class="h3-title">Jogo do Número Secreto</h3>
-                    <p>Jogo desenvolvido durante o curso <br>de Lógica de Programação do Programa Oracle One</p>
-                    <div class="btn-wrap">
-                        <a class="btn btn-secondary" href="">Repositório</a>
-                        <a class="btn btn-primary" href="">Ver Demo</a>
+                <div class="exp-card card2">
+                    <div class="thumb-placeholder"></div>
+                    <div class="exp-text-wrap">
+                        <div class="center">
+                            <h3 class="h3-title">Jogo do Número Secreto</h3>
+                            <p>Jogo desenvolvido durante o curso <br>de Lógica de Programação do Programa Oracle One</p>
+                            <div class="btn-wrap">
+                                <a class="btn btn-secondary" href="">Repositório</a>
+                                <a class="btn btn-primary" href="">Ver Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="thumb-placeholder"></div>
             </div>
         </section>
 
         <section class="contato section-card">
-            <h2 class="h2-title">Contato</h2>
-            <p>Quer entrar em contato comigo? <br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-            <form>
-                <div class='full-input'>
-                    <label for='name'>Nome</label>
-                    <input type='text' name='name'></input>
-                </div>
-                <div class='full-input'>
-                    <label for='email'>E-mail</label>
-                    <input type='text' name='name'></input>
-                </div>
-                <input type="text" name="assunto" placeholder="Assunto">
-                <textarea name="mensagem">Mensagem</textarea>
-                <input type="submit" value="Enviar Mensagem">
-            </form>
+            <div class="contato-img"></div>
+            <div class="contato-wrap">
+                <h2 class="h2-title">Contato</h2>
+                <p>Quer entrar em contato comigo? <br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                <form class="formulario">
+                    <div class='full-input'>
+                        <label for='name'>Nome</label>
+                        <input type='text' name='name'></input>
+                    </div>
+                    <div class='full-input'>
+                        <label for='email'>E-mail</label>
+                        <input type='text' name='name'></input>
+                    </div>
+                    <input class="full-input" type="text" name="assunto" placeholder="Assunto">
+                    <textarea class="full-input" name="mensagem" placeholder="Mensagem"></textarea>
+                    <input class="btn btn-primary" type="submit" value="Enviar Mensagem">
+                </form>
+            </div>
         </section>
     </div>
 
