@@ -128,23 +128,29 @@
             <div class="contato-wrap">
                 <h2 class="h2-title">Contato</h2>
                 <p>Quer entrar em contato comigo? <br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+
                 <form class="formulario">
-                    <div class='full-input'>
-                        <label for='name'>Nome</label>
-                        <input type='text' name='name'></input>
-                    </div>
-                    <div class='full-input'>
-                        <label for='email'>E-mail</label>
-                        <input type='text' name='name'></input>
-                    </div>
-                    <input class="full-input" type="text" name="assunto" placeholder="Assunto">
-                    <textarea class="full-input" name="mensagem" placeholder="Mensagem"></textarea>
-                    <input class="btn btn-primary" type="submit" value="Enviar Mensagem">
+                    <fieldset class="form-box">
+                        <label class="form__label" for="nome">Nome</label>
+                        <input name="nome" class="form__text" id="nome" type="text"minlength="3" required></input>
+                    </fieldset>
+                    
+                    <fieldset class="form-box">
+                        <label class="form__label" for="email">E-mail</label>
+                        <input name="email" class="form__text" id="email" type="email"minlength="4" required></input>
+                    </fieldset>
+
+                    <input name="assunto" class="form-box" id="assunto" type="text"  placeholder="Assunto" required>
+                    
+                    <textarea name="mensagem" class="form-box" id="mensagem" rows="5" cols="40" placeholder="Sua mensagem aqui" required></textarea>
+
+                    <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
                 </form>
             </div>
         </section>
     </div>
 
+    <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/36753be36b.js" crossorigin="anonymous"></script>
 </body>
 </html>

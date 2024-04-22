@@ -442,13 +442,14 @@ main {
     gap: 24px;
 }
 
-.full-input {
-    display: inline-block;
-    padding: 3px;
+.form-box {
+    /* display: inline-block; */
     background-color: #262629;
     border: 1px solid #47484F;
     border-radius: 8px;
     padding: 12px;
+    min-height: 60px;
+    box-sizing: border-box;
 }
 
 input {
@@ -470,14 +471,23 @@ textarea {
     resize: none;
     outline: none;
 }
+
 textarea, input{
     font-family: var(--nunito);
     font-size: 16px;
     color: #B2B3BD;
 }
 
-input.btn-primary {
+button.btn-primary {
     color: var(--text);
-    line-height: 16px;
-    width: 40%;
+    font-size: 16px;
+    max-width: 180px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-wrap a {
+    min-width: 136px;
+    text-align: center;
+    box-sizing: border-box;
 }
