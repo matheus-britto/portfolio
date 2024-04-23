@@ -99,7 +99,7 @@ body {
     position: absolute;
     height: 1px;
     width: 0%;
-    background-color: #8927EF;
+    background-color: #8d22ff;
     /* left: 0; */
     left: 50%;
     right: 50%;
@@ -139,7 +139,7 @@ main {
 .hero h1 {
     font-size: 5.2rem;
     font-weight: 700;
-    line-height: 6.5rem;
+    line-height: 6.2rem;
 }
 
 .hero p {
@@ -164,9 +164,10 @@ main {
     font-family: var(--ibm-plex);
     font-size: 1.6rem;
     font-weight: 500;
+    line-height: 2.1rem;
     background-color: #4d148a;
     padding: 8px 16px;
-    border-radius: 16px;
+    border-radius: 32px;
     transition: ease-in-out 1s;
 }
 
@@ -215,7 +216,7 @@ main {
 .about p {
     font-family: var(--ibm-plex);
     font-size: 1.6rem;
-    line-height: 2.16rem;
+    line-height: 2.2rem;
 }
 
 .highlights {
@@ -250,7 +251,6 @@ main {
     background-color: #8927EF;
     padding: 16px;
     border-radius: 12px;
-    font-weight: 700;
     display: flex;
     align-items: flex-end;
     transition: ease-in-out .5s;
@@ -263,6 +263,12 @@ main {
     background-color: color-mix(in srgb, #8927EF, black 10%);
     box-shadow: 0 0 0 #8927EF;
     border: 2px solid color-mix(in srgb, white, transparent 50%)
+}
+
+.box-content > span {
+    font-weight: 700;
+    line-height: 22px;
+    user-select: none;
 }
 
 .box-content {
@@ -288,6 +294,7 @@ main {
 .h2-title {
     font-family: var(--nunito);
     font-size: 3.2rem;
+    line-height: 40px;
     font-weight: 700;
 }
 
@@ -299,23 +306,25 @@ main {
 .formacao-card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .h3-title {
     font-family: var(--nunito);
     font-size: 2.2rem;
+    line-height: 3.3rem;
     font-weight: 700;
 }
 
 .formacao-card p {
     font-family: var(--ibm-plex);
     font-weight: 500;
+    line-height: 2.2rem;
 }
 
 .white-box {
     width: 368px;
     height: 286px;
+    margin-bottom: 8px;
     background-color: var(--text);
     border-radius: 8px;
 }
@@ -369,8 +378,15 @@ main {
 }
 
 .exp-text-wrap p {
+    font-family: var(--ibm-plex);
     margin-bottom: 8px;
     line-height: 21.6px;
+}
+
+.exp-text-wrap .h3-title {
+    font-size: 3.2rem;
+    line-height: 40px;
+    color: #E7D9FF;
 }
 
 .btn-wrap {
@@ -378,9 +394,16 @@ main {
     gap: 16px;
 }
 
+.btn-wrap .btn {
+    min-width: 136px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .btn {
     font-family: var(--ibm-plex);
     font-weight: 500;
+    line-height: 2.2rem;
     padding: 16px 24px;
     border-radius: 8px;
     transition: ease-in-out .5s;
@@ -422,12 +445,16 @@ main {
 .contato-wrap {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     padding-top: 8px;
 }
 
 .contato-wrap p {
     margin-bottom: 32px;
+    line-height: 22px;
+}
+
+.contato-wrap > .h2-title {
+    margin-bottom: 8px;
 }
 
 .contato-img {
@@ -443,28 +470,64 @@ main {
 }
 
 .form-box {
-    /* display: inline-block; */
     background-color: #262629;
     border: 1px solid #47484F;
     border-radius: 8px;
     padding: 12px;
-    min-height: 60px;
+    min-height: 68px;
     box-sizing: border-box;
+    position: relative;
 }
 
-input {
+.form-box.subject {
+    display: flex;
+    align-items: center;
+}
+
+.form__text {
     background-color: transparent;
     outline: none;
     border: none;
     display: block;
     line-height: 1.2em;
-    font-size: 14pt;
+    width: 100%;
 }
+
+.alert {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 25%;
+    /* transform: translateY(-50%); */
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid #7B242F;
+    background: #201315;    
+    opacity: .8;
+}
+
+.alert__text {
+    font-family: var(--ibm-plex);
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: #FBD3CB;
+}
+
+.alert > i {
+    color: #FBD3CB;
+    font-size: 1.4rem;
+    margin-right: 8px;
+}
+
 
 label{
     display: block;
     font-size: 12px;
     color: #B2B3BD;
+    margin-bottom: 4px;
 }
 
 textarea {
@@ -472,13 +535,15 @@ textarea {
     outline: none;
 }
 
-textarea, input{
+input, 
+textarea{
     font-family: var(--nunito);
-    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
     color: #B2B3BD;
 }
 
-button.btn-primary {
+.formulario > .btn-primary {
     color: var(--text);
     font-size: 16px;
     max-width: 180px;
@@ -486,8 +551,12 @@ button.btn-primary {
     cursor: pointer;
 }
 
-.btn-wrap a {
-    min-width: 136px;
-    text-align: center;
-    box-sizing: border-box;
+.ativo {
+    display: block;
+}
+
+.form-box.mensagem > span {
+    top: auto;
+    bottom: 12px;
+    transform: translateY(0%);
 }

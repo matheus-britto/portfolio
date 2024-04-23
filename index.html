@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Matheus Brito - Portfólio </title>
@@ -48,24 +49,84 @@
             <div class="skills">
                 <h2 class="h2-title">Skills</h2>
                 <div class="highlight--itens">
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/html5.svg">HTML 5</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/js.svg">Javascript</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/css3-alt.svg">CSS</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/figma.svg">Figma</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/Adobe_Photoshop_CC_icon 1.svg">Photoshop</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/Adobe_Illustrator_CC_icon.svg">Illustrator</span></div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/html5.svg">
+                            <span>HTML 5</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/js.svg">
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/css3-alt.svg">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/figma.svg">
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/Adobe_Photoshop_CC_icon 1.svg">
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/Adobe_Illustrator_CC_icon.svg">
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="hobbies">
                 <h2 class="h2-title">Hobbies</h2>
                 <div class="highlight--itens">
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/music-solid.svg">Ouvir música</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/film-solid.svg">Assistir filmes</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/gamepad-solid.svg">Jogar</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/person-walking-solid.svg">Caminhar</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/camera-solid.svg">Tirar fotos</span></div>
-                    <div class="highlight--boxes"><span class="box-content"><img src="assets/book-solid.svg">Estudar</span></div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/music-solid.svg">
+                            <span>Ouvir música</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/film-solid.svg">
+                            <span>Assistir filmes</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/gamepad-solid.svg">
+                            <span>Jogar</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/person-walking-solid.svg">
+                            <span>Caminhar</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/camera-solid.svg">
+                            <span>Tirar fotos</span>
+                        </div>
+                    </div>
+                    <div class="highlight--boxes">
+                        <div class="box-content">
+                            <img src="assets/book-solid.svg">
+                            <span>Estudar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,16 +194,24 @@
                     <fieldset class="form-box">
                         <label class="form__label" for="nome">Nome</label>
                         <input name="nome" class="form__text" id="nome" type="text"minlength="3" required></input>
+                        <span class="alert alert__text" id="mensagemErro"><i class="fa-solid fa-circle-exclamation"></i></span>
                     </fieldset>
                     
                     <fieldset class="form-box">
                         <label class="form__label" for="email">E-mail</label>
                         <input name="email" class="form__text" id="email" type="email"minlength="4" required></input>
+                        <span class="alert alert__text" id="mensagemErro"><i class="fa-solid fa-circle-exclamation"></i></span>
                     </fieldset>
 
-                    <input name="assunto" class="form-box" id="assunto" type="text"  placeholder="Assunto" required>
+                    <div class="form-box subject">
+                        <input name="assunto" class="form__text" id="assunto" type="text"  placeholder="Assunto" required>
+                        <span class="alert alert__text" id="mensagemErro"><i class="fa-solid fa-circle-exclamation"></i></span>
+                    </div>
                     
-                    <textarea name="mensagem" class="form-box" id="mensagem" rows="5" cols="40" placeholder="Sua mensagem aqui" required></textarea>
+                    <div class="form-box mensagem">
+                        <textarea name="mensagem" class="form__text" id="mensagem" rows="5" cols="40" placeholder="Sua mensagem aqui" required></textarea>
+                        <span class="alert alert__text" id="mensagemErro"><i class="fa-solid fa-circle-exclamation"></i></span>
+                    </div>
 
                     <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
                 </form>
@@ -150,7 +219,7 @@
         </section>
     </div>
 
-    <script src="script/script.js"></script>
+    <script src="script/script.js" type="module"></script>
     <script src="https://kit.fontawesome.com/36753be36b.js" crossorigin="anonymous"></script>
 </body>
 </html>
